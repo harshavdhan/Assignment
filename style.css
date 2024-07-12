@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    position: relative;
+}
+
+#navbar {
+    max-width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 90px;
+    border-bottom: 1px solid #E0E0E0
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #F2F2F2;
+    padding: 8px 20px;
+    padding-right: 92px;
+    border-radius: 30px;
+}
+
+.search-input input {
+    border: none;
+    background-color: #F2F2F2;
+    font-size: 1.05rem;
+    width: 100%;
+    font-weight: 600;
+}
+
+#nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right-span {
+    color: #495DC6;
+}
+
+#nav-right span {
+    font-weight: 500;
+}
+
+#mobile-navbar {
+    display: none;
+}
+
+#home-container {
+    max-width: 100vw;
+    height: 65vh;
+    position: relative;
+    background-image: url(images/home.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.45) 31px 42px 89px 150px inset;
+    background-repeat: no-repeat;
+
+}
+
+.home-text {
+    position: absolute;
+    bottom: 18%;
+    left: 12%;
+    color: #fff;
+}
+
+.home-text h2 {
+    font-size: 2.3rem;
+}
+
+.home-text h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.6rem;
+}
+
+#post-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px 10px;
+
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0px;
+    padding-bottom: 16px;
+
+}
+
+.post-mobile {
+    display: none;
+}
+
+.left {
+    display: flex;
+    gap: 20px;
+
+}
+
+.left li {
+    list-style: none;
+
+}
+
+.left a {
+    color: #ADB5BD;
+    text-decoration: none;
+
+}
+
+.active {
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.right {
+    display: flex;
+
+}
+
+.post-button {
+    margin-left: 10px;
+    padding: 10px 9px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.second {
+    background-color: #2F6CE5;
+    color: #fff;
+    gap: 8px;
+
+
+}
+
+.enter {
+    border: none;
+    font-size: 18px;
+}
+
+.post-content {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.cards {
+    max-width: 700px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.cards h4 {
+    padding: 15px 10px;
+    font-size: 1.08rem;
+
+}
+
+.card-desc {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.21rem;
+
+}
+
+.card-desc-left {
+    width: 75%;
+
+}
+
+.cards p {
+    padding: 10px 10px;
+    font-size: 1.18rem;
+    color: #5C5C5C;
+
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+
+
+}
+
+.info-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #525252;
+
+
+}
+
+.info-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.info-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-right: 10px;
+
+}
+
+.eye {
+    display: flex;
+    gap: 10px;
+
+}
+
+.share {
+    background-color: #EDEEF0;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.date-info {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 50px;
+
+}
+
+.date,
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.visit-but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.visit {
+    padding: 8px;
+    width: 90%;
+    border-radius: 8px;
+    color: #E56135;
+    font-weight: 500;
+    border: 0.7px solid #A9AEB8;
+
+}
+
+.apply {
+    color: #02B875;
+
+}
+
+.mobile {
+    display: none;
+}
+
+.post-content-right {
+    max-width: 300px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.4px solid #B8B8B8;
+}
+
+.instruction {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+#nav-right-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav-right-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.follow-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.follow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow-left img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.follow-header {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.follow-info {
+    margin-top: 25px;
+}
+
+.follow-but {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background-color: #EDEEF0;
+    border: none;
+}
+
+.follow-link {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.follow-link a {
+    color: #2F6CE5;
+    text-decoration: none;
+}
+
+#mpen {
+    display: none;
+}
+
+#create-account {
+    display: none;
+}
+
+@media (max-width:750px) {
+    #navbar {
+        display: none;
+    }
+
+
+
+    #mobile-navbar {
+        max-width: 100vw;
+        height: 60px;
+        display: block flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+    }
+
+    .mbut {
+        padding: 5px 10px;
+        background: transparent;
+        color: #fff;
+        border: 0.8px solid #FFFFFF;
+        border-radius: 4px;
+    }
+
+    #mpen {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    #mpen svg {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        background: linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%);
+        box-shadow: 0px 0px 2px 0px #00000014;
+        box-shadow: 0px 2px 4px 0px #0000002E;
+        border-radius: 50%;
+
+
+    }
+
+    #create-account {
+        display: block;
+    }
+
+    #home-container {
+        height: 35vh;
+    }
+
+    .home-text {
+        bottom: 15%;
+        left: 6%;
+        color: #fff;
+    }
+
+    .home-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-text h4 {
+        font-size: 1rem;
+    }
+
+    #post-container {
+        max-width: 600px;
+    }
+
+    .post-content-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards {
+        width: 300px;
+
+    }
+
+    .card-img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cards h4 {
+        padding: 15px 10px;
+        font-size: 1.05rem;
+
+    }
+
+    .card-desc {
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.21rem;
+
+    }
+
+
+    .card-desc-left h3 {
+        font-size: 1.08rem;
+    }
+
+    .cards p {
+        font-size: 1.02em;
+
+    }
+
+    .card-info {
+        display: flex;
+        padding: 10px 10px;
+        gap: 20px;
+
+    }
+
+    .info-left {
+        gap: 8px;
+
+
+    }
+
+    .info-right {
+        gap: 10px;
+        padding-right: 10px;
+
+    }
+
+    .date-info {
+        padding: 10px 10px;
+        gap: 15px;
+
+    }
+
+    .right {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .post-header {
+        display: none;
+    }
+
+    .post-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-right button {
+        padding: 6px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .post-content-right {
+        display: none;
+    }
+
+    #create-account {
+        display: block flex;
+        flex-direction: column;
+        gap: 20px;
+        position: fixed;
+        bottom: 0%;
+        left: 1%;
+        background-color: #FFFFFF;
+        padding: 25px;
+        border-radius: 20px;
+        overflow: hidden;
+
+    }
+
+    .create-header {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .create-right {
+        background-color: #212529;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .create-form input {
+        padding: 8px 15px;
+        border: 0.5px solid #8A8A8A;
+        width: 100%;
+    }
+
+    .name {
+        max-width: 100vw;
+        display: flex;
+    }
+
+    .firstname {
+        width: 50%;
+    }
+
+    .lastname {
+        width: 50%;
+    }
+
+    .open-account {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .open-left button {
+        padding: 8px 20px;
+        border-radius: 15px;
+        border: none;
+        background: #2F6CE5;
+        color: #ffff;
+    }
+
+    .open-right a {
+        color: #000000;
+    }
+
+    .facebook img,
+    .google img {
+        width: 18px;
+    }
+
+    .facebook,
+    .google {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .sign {
+        text-align: center;
+    }
+}
